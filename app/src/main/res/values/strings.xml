@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Application3</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="numefilm">The Wolf Of Wall Street</string>
+    <string name="numeactor">Leonardo DiCaprio</string>
+    <string name="gen">Comedie</string>
+    <string name="description">Lupul de pe Wall Street (original The Wolf of Wall Street) este un film american de comedie neagră din 2013, regizat de Martin Scorsese, bazat pe memoriile cu același nume ale lui Jordan Belfort. Filmul a fost lansat pe 25 decembrie 2013. Scenariul a fost scris de Terence Winter, filmul avându-l ca protagonist pe Leonardo DiCaprio în rolul lui Belfort, un broker din New York care conduce o firmă care se ocupa cu fraude de titluri mobiliare și corupție pe Wall Street în anii 1990. De notat faptul ca scenaristul si producatorul Terence Winter a creat serialul TV "Boardwalk Empire" împreuna cu Martin Scorsese, difuzata de HBO din 2010.</string>
+    <string name="url">Read more about The Wolf Of Wall Street...</string>
+</resources>
