@@ -11,7 +11,7 @@ public class WebViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
         webView = (WebView)findViewById(R.id.urlMovie);
-        webView.loadUrl("http://www.google.com");
+        webView.loadUrl("https://www.imdb.com/title/tt0993846/");
     }
 
 }
