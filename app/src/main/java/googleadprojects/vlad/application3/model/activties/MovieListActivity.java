@@ -1,15 +1,24 @@
 package googleadprojects.vlad.application3.model.activties;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
 import googleadprojects.vlad.application3.R;
+import googleadprojects.vlad.application3.model.adapters.ItemClickListener;
+import googleadprojects.vlad.application3.model.adapters.MoviesAdapter;
 import googleadprojects.vlad.application3.model.model.Movie;
+
+import static googleadprojects.vlad.application3.model.activties.Constants.MOVIE_DESCRIPTION;
+import static googleadprojects.vlad.application3.model.activties.Constants.MOVIE_GENRE;
+import static googleadprojects.vlad.application3.model.activties.Constants.MOVIE_NAME;
+import static googleadprojects.vlad.application3.model.activties.Constants.MOVIE_RATING;
 
 
 public class MovieListActivity extends AppCompatActivity {
@@ -50,6 +59,19 @@ public class MovieListActivity extends AppCompatActivity {
         movieList.add(inception);
         movieList.add(avengersInfinite);
 
-        
+        mAdapter = new MoviesAdapter(movieList, new ItemClickListener() {
+            @Override
+            public void OnItemClick(View view, int position) {
+                Movie clickedMovie = movieList.get(position);
+                Intent intent = new Intent(MovieListActivity.this, MovieActivity.class);
+                intent.putExtra(MOVIE_NAME, clickedMovie.getName();
+                intent.putExtra(MOVIE_DESCRIPTION,clickedMovie.getShortDescription());
+                intent.putExtra(MOVIE_GENRE,clickedMovie.getGenre());
+                intent.putExtra(MOVIE_RATING,clickedMovie.getRating());
+
+                startActivity(intent);
+            }
+        });
+                mRecyclerView.setAdapter(mAdapter);
     }
 }
