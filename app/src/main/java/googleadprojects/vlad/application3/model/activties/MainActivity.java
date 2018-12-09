@@ -1,4 +1,4 @@
-package googleadprojects.vlad.application3.model;
+package googleadprojects.vlad.application3.model.activties;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

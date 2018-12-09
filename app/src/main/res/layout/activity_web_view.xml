@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".model.WebViewActivity">
+    tools:context=".model.activties.WebViewActivity">
     <WebView
         android:id="@+id/urlMovie"
         android:layout_width="match_parent"
